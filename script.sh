@@ -1,4 +1,4 @@
-#! bin/bash
+#! /bin/bash
 
 number=`grep -in '<script>bpoAppVersion' url`
 date=$(( `date +%H` + `date +%M` ))
