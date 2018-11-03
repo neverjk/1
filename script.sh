@@ -1,6 +1,7 @@
 #! /bin/bash
 
-number=`grep -in '<script>bpoAppVersion' url`
+number=`grep -in '<script>bpoAppVersion' url | grep "[0-9]{2}"`
+
 date=$(( `date +%H` + `date +%M` ))
 echo "$date"
 echo "$number"
